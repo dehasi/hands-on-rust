@@ -1,0 +1,43 @@
+= Hands on Runt
+
+== Chapter 1
+
+
+[source,shell]
+----
+cargo new ${NAME} # creates a new project and git repo
+cargo new ${NAME} --vcs=none # creates a new project
+
+cargo build --release
+cargo clean
+cargo run --release
+
+cargo search  ${NAME} # searches for a lib in https://crates.io/
+
+cargo clippy # runs Clippy linter
+----
+
+Turn on all warnings
+[source,rust]
+----
+#![warn(clippy::all, clippy::pedantic)]
+----
+
+== Chapter 2
+[source,rust]
+----
+println!("Hello {:?}", name); // shows symbols like \r
+println!("Hello {:#?}", name); // pretty print
+----
+
+The lack of semicolon means "implicit return".
+
+`Self` - the structure itself, `self` - an instance of the structure.
+
+Use
+
+[source,rust]
+----
+#[derive(Debug)]
+----
+for pretty printing `{:#?}` or`{:?}` structures.
