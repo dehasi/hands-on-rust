@@ -41,3 +41,5 @@ Use
 #[derive(Debug)]
 ----
 for pretty printing `{:#?}` or`{:?}` structures.
+
+== Chapter 3
