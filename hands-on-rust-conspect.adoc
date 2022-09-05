@@ -43,3 +43,11 @@ Use
 for pretty printing `{:#?}` or`{:?}` structures.
 
 == Chapter 3
+
+You implement a trait within your structure
+[source,rust]
+----
+impl SomeTrate for MyStruct {}
+----
+
+== Chapter 4
